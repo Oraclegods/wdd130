@@ -3,10 +3,58 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us - White Water Rafting</title>
-  <meta name="description" content="White Water Rafting is dedicated to providing the ultimate adventure experience for thrill-seekers and nature lovers alike. Explore our mission, creed, and motto to learn more.">
+  <meta name="Meta description" content="contact us page">
   <meta name="author" content="Folusho Sanni">
+  <title>Contact us</title>
   <link rel="stylesheet" href="styles/rafting.css">
+  <style>
+    /* Additional CSS styles for employee profiles and contact form */
+    .employee-profile {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+    .employee-profile img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+    }
+    .employee-profile .caption {
+      text-align: center;
+      margin-top: 10px;
+    }
+    .contact-form {
+      margin-top: 30px;
+    }
+    .contact-form label {
+      display: block;
+      margin-bottom: 10px;
+    }
+    .contact-form input[type="text"],
+    .contact-form input[type="email"],
+    .contact-form textarea {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    .contact-form input[type="radio"] {
+      margin-right: 5px;
+    }
+    .contact-form button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .contact-form button:hover {
+      background-color: #45a049;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -20,37 +68,41 @@
   </header>
 
   <main>
-    <section class="hero">
-      <img src="images/hero-image.jpg" alt="Hero Image" class="hero-image">
-      <h1 class="hero-text">White Water Rafting</h1>
-      <div class="article-carousel"> <article class="article">
-          <p>White Water Rafting is dedicated to providing the ultimate adventure experience for thrill-seekers and nature lovers alike.</p>
-          </article>
-        </div>
-    </section>
-
-    <section class="history">
-      <div class="history-grid">
-        <img src="images/history-image.jpg" alt="History" class="history-image">
-        <div class="history-content">
-          <h2>History</h2>
-          <p>Founded in 2005, White Water Rafting began as a small operation with a big dream: to share the excitement of rafting with the world.</p>
-          <h2>Our Mission</h2> <p>Our mission at White Water Rafting is to provide unforgettable adventure experiences in nature's playground. We are committed to ensuring the safety and enjoyment of our guests while preserving the environment for future generations.</p>
-          <h2>Our Creed</h2> <p>We believe in the transformative power of nature and adventure. We strive to foster a sense of camaraderie among our guests and team members, embracing challenges with enthusiasm, courage, and respect for the natural world.</p>
-          <h2>Our Motto</h2> <p>Embrace the Rush, Explore the Wild</p>
-        </div>
+    <section class="employee-profile">
+      <div>
+        <img src="images/employee1.jpg" alt="Employee 1">
+        <div class="caption">John Doe<br>Adventure Guide</div>
+      </div>
+      <div>
+        <img src="images/employee2.jpg" alt="Employee 2">
+        <div class="caption">Jane Smith<br>River Safety Expert</div>
+      </div>
+      <div>
+        <img src="images/employee3.jpg" alt="Employee 3">
+        <div class="caption">Alex Johnson<br>Outdoor Enthusiast</div>
       </div>
     </section>
 
-    <section class="adventure-awaits">
-      <h2>Adventure Awaits You!</h2>
-      <div class="adventure-grid">
-        <img src="images/rafting-image1.jpg" alt="Rafting Image 1">
-        <img src="images/rafting-image2.jpg" alt="Rafting Image 2">
-        <img src="images/rafting-image3.jpg" alt="Rafting Image 3">
-        <img src="images/rafting-image4.jpg" alt="Rafting Image 4">
-        <img src="images/rafting-image5.jpg" alt="Rafting Image 5">
-      </div>
+    <section class="contact-form">
+      <h2>Contact Us</h2>
+      <form action="#" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="purpose">Purpose of Message:</label><br>
+        <input type="radio" id="general" name="purpose" value="General Inquiry" required>
+        <label for="general">General Inquiry</label><br>
+        <input type="radio" id="reservation" name="purpose" value="Reservation Question">
+        <label for="reservation">Reservation Question</label><br>
+        <input type="radio" id="suggestion" name="purpose" value="Website Suggestion">
+        <label for="suggestion">Website Suggestion</label><br>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        <input type="checkbox" id="newsletter" name="newsletter" value="subscribe">
+        <label for="newsletter">Please subscribe me to the monthly newsletter</label><br>
+        <button type="submit">Submit</button>
+      </form>
     </section>
   </main>
 
@@ -70,3 +122,4 @@
   </footer>
 </body>
 </html>
+
