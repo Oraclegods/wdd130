@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="styles/rafting.css">
   <style>
     /* Any additional styles can be added here */
-    /* General styles */
+/* General styles */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -57,18 +57,13 @@ main {
 /* Featured trip styles */
 .trip {
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
 }
 
 .trip img {
-  max-width: 300px;
+  max-width: 100%;
   height: auto;
-}
-
-.trip-info {
-  padding: 10px;
-  border: 1px solid #ccc;
 }
 
 /* All trips table styles */
@@ -99,19 +94,20 @@ footer {
 /* Responsive styles */
 @media (min-width: 768px) {
   main {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr;
   }
 
   .trip {
-    grid-template-columns: auto;
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .trip-info {
-    border: none;
+    border: 1px solid #ccc;
+    padding: 10px;
   }
 
   .trip-table {
-    grid-column: span 2;
+    grid-column: span 3;
   }
 }
 
