@@ -132,46 +132,46 @@ footer p {
 }
 
 /* Added CSS */
-.container {
+.trip-html .container {
   display: grid;
   grid-template-columns: 1fr 2fr;
   height: 100vh;
 }
 
-.left {
+.trip-html .left {
   background-color: #f2f2f2;
   padding: 20px;
 }
 
-.right {
+.trip-html .right {
   padding: 20px;
 }
 
-.employee-profile {
+.trip-html .employee-profile {
   display: flex;
   justify-content: center;
   gap: 20px;
   margin-bottom: 20px;
 }
 
-.employee-profile div {
+.trip-html .employee-profile div {
   text-align: center;
 }
 
-.company-info {
+.trip-html .company-info {
   margin-bottom: 20px;
 }
 
-.map-container {
+.trip-html .map-container {
   margin-top: 20px;
 }
 
-iframe {
+.trip-html iframe {
   width: 100%;
   height: 300px;
 }
 
-footer {
+.trip-html footer {
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -181,13 +181,13 @@ footer {
   padding: 10px 0;
 }
 
-.sociallinks {
+.trip-html .sociallinks {
   display: flex;
   justify-content: center;
   gap: 10px;
 }
 
-.sociallinks img {
+.trip-html .sociallinks img {
   width: 30px;
   height: 30px;
 }
