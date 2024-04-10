@@ -94,6 +94,8 @@ footer p {
 
 .contact-form {
   margin-top: 30px;
+  max-width: 400px; /* Retaining the max-width property */
+  margin: auto; /* Retaining the margin property */
 }
 
 .contact-form label {
@@ -154,11 +156,6 @@ footer p {
 
 .employee-profile div {
   text-align: center;
-}
-
-.contact-form {
-  max-width: 400px;
-  margin: auto;
 }
 
 .company-info {
