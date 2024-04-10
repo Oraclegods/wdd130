@@ -9,13 +9,10 @@
   <link rel="stylesheet" href="styles/rafting.css">
   <style>
     /* Any additional styles can be added here */
-/* General styles */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f8f9fa;
-  color: #333;
 }
 
 .container {
@@ -32,6 +29,18 @@ p {
   color: #666;
 }
 
+/* Header styles */
+
+nav {
+  margin-top: 10px;
+}
+
+.nav-button {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+}
+
 /* Main content styles */
 main {
   display: grid;
@@ -44,6 +53,7 @@ main {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
+  justify-content: flex-end; /* Aligns the featured trip grid to the right */
 }
 
 .trip img {
@@ -66,18 +76,30 @@ main {
 /* Call to action styles */
 .call-to-action {
   text-align: center;
-  background-color: #0056b3;
-  color: #fff;
-  padding: 20px;
 }
+
+/* Footer styles */
+
 
 /* Responsive styles */
 @media (min-width: 768px) {
   main {
+    grid-template-columns: 1fr;
+  }
+
+  .trip {
     grid-template-columns: repeat(3, 1fr);
   }
-}
 
+  .trip-info {
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+
+  .trip-table {
+    grid-column: span 3;
+  }
+}
   </style>
   
 </head>
