@@ -1,128 +1,54 @@
-/* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
-
-/* Define CSS variables */
-:root {
-  --primary-color: #007bff;
-  --secondary-color: #ffc107;
-  --text-color: #333;
-}
-
-/* General styles */
-body {
-  font-family: 'Roboto', sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f8f9fa;
-  color: var(--text-color);
-}
-
-/* Header styles */
-header {
-  background-color: var(--primary-color);
-  padding: 20px;
+/* Additional CSS styles for employee profiles and contact form */
+.employee-profile {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-}
-
-header img {
-  width: 150px;
-  height: auto;
-}
-
-nav {
-  display: flex;
-}
-
-nav a {
-  color: #fff;
-  text-decoration: none;
-  padding: 10px 20px;
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  border-radius: 5px;
-  margin: 0 5px;
-}
-
-/* White Water Rafting Section */
-.white-water-rafting {
-  text-align: center;
-}
-
-.white-water-rafting img {
-  width: 100%; /* Make image wider */
-  height: auto;
-}
-
-.white-water-rafting-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #fff;
-  font-weight: bold;
-  font-size: 24px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow for better visibility */
-}
-
-/* Align description center below the image */
-.white-water-rafting-description {
-  text-align: center;
   margin-top: 20px;
 }
 
-/* Article Section */
-.article-box {
-  background-color: rgba(255, 255, 255, 0.8);
-  padding: 20px;
-  border-radius: 10px;
-  width: 50%;
-  margin: 20px auto;
-  text-align: justify;
+.employee-profile img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
 }
 
-/* Adventure Awaits You Section */
-.adventure-awaits {
+.employee-profile .caption {
   text-align: center;
+  margin-top: 10px;
 }
 
-.adventure-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid for images */
-  gap: 10px; /* Add spacing between images */
+.contact-form {
+  margin-top: 30px;
 }
 
-.adventure-grid img {
-  width: 100%; /* Make images fit within grid cells */
-  height: auto;
+.contact-form label {
+  display: block;
+  margin-bottom: 10px;
 }
 
-/* Footer styles */
-footer {
-  background-color: var(--primary-color);
-  padding: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 
-footer p {
-  color: #fff;
-  margin: 0;
+.contact-form input[type="radio"] {
+  margin-right: 5px;
 }
 
-.sociallinks {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
+.contact-form button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-.sociallinks a {
-  text-decoration: none;
-  margin-left: 10px;
-}
-
-.sociallinks img {
-  width: 30px;
+.contact-form button:hover {
+  background-color: #45a049;
 }
