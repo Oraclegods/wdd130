@@ -8,13 +8,7 @@
   <title>Contact us</title>
   <link rel="stylesheet" href="styles/rafting.css">
   <style>
-    body, html {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      font-family: Arial, sans-serif;
-    }
-
+    /* Added CSS */
     .container {
       display: grid;
       grid-template-columns: 1fr 2fr;
@@ -79,9 +73,20 @@
       width: 30px;
       height: 30px;
     }
+    /* End of Added CSS */
   </style>
 </head>
 <body>
+  <header>
+    <img src="images/logo.png" alt="White Water Rafting Logo">
+    <nav>
+      <a href="index.html" class="nav-button">Home</a>
+      <a href="about.html" class="nav-button">About</a>
+      <a href="#" class="nav-button">Trips</a>
+      <a href="contact.html" class="nav-button">Contact</a>
+    </nav>
+  </header>
+
   <div class="container">
     <div class="left">
       <section class="employee-profile">
@@ -133,6 +138,7 @@
       </section>
     </div>
   </div>
+
   <footer>
     <p>&copy; 2024 White Water Rafting | Created by [Your Name]</p>
     <nav class="sociallinks">
